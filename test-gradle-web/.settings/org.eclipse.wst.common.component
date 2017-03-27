@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+	<wb-module deploy-name="test-gradle-web">
+        <dependent-module archiveName="test-gradle-api.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/test-gradle-api/test-gradle-api">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="test-gradle-entity.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/test-gradle-entity/test-gradle-entity">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+		<property name="context-root" value="test-gradle-web"/>
+		<wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/resources"/>
+		<wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/java"/>
+		<wb-resource deploy-path="/" source-path="src/main/webapp"/>
+	</wb-module>
+</project-modules>
